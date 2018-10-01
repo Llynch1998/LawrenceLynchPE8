@@ -10,6 +10,15 @@ namespace LawrenceLynchPE8
     {
         static void Main(string[] args)
         {
+            Potion myCustomPotion = new Potion("Passing Grade", 90, "Red", "To pass this class", 20);
+            Potion defaultPotion = new Potion();
+            myCustomPotion.PrintPotion();
+            defaultPotion.PrintPotion();
+
+            myCustomPotion.UsePotion();
+            myCustomPotion.PrintPotion();
         }
     }
+
+   
 }
